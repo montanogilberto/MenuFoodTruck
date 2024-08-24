@@ -1,0 +1,34 @@
+
+.menu-item-name {
+    font-weight: bold; /* Makes the item name bold */
+    color: #ffc107; /* Bootstrap's warning color, usually a shade of yellow */
+}
+.description {
+    display: block; /* Makes the description appear on a new line */
+    margin-left: 20px; /* Indents the description for better readability */
+}
+.contact-info {
+    position: absolute; /* Positions the contact info over the carousel */
+    bottom: 0; /* At the bottom of the carousel */
+    left: 0; /* Starts from the left side */
+    width: 100%; /* Full width of the carousel */
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+    color: #ffffff; /* White text */
+    padding: 10px; /* Padding for spacing */
+    text-align: center; /* Centered text */
+    border-top: 2px solid #ffc107; /* Adds a visual separator */
+}
+.carousel-item {
+    height: 85%; /* Ensures carousel images cover full height */
+}
+/* Adjust the carousel and contact-info container to better fit the new layout */
+.carousel-container {
+    height: 75%; /* Smaller percentage to allow for contact-info */
+}
+.contact-container {
+    height: 25%; /* Remaining space for contact info */
+    background: #000; /* Matching the theme */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

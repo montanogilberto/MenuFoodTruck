@@ -1,228 +1,106 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Buchon Menu</title>
-    <!-- Mobile Specific Meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/flaticon.css" />
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/bootsnav.css">
-    <link rel="stylesheet" href="css/color.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body data-spy="scroll" data-target="#navbar-menu" data-offset="100">
-    <!-- Preloader --> 
-    <div id="loading">
-        <div id="loading-center">
-            <div id="loading-center-absolute">
-                <div class="object" id="object_one"></div>
-                <div class="object" id="object_two"></div>
-                <div class="object" id="object_three"></div>
-                <div class="object" id="object_four"></div>
-                <div class="object" id="object_five"></div>
-                <div class="object" id="object_six"></div>
-                <div class="object" id="object_seven"></div>
-                <div class="object" id="object_eight"></div>
-                <div class="object" id="object_big"></div>
-            </div>
-        </div>
-    </div>
-    <!--End Preloader -->
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-default bootsnav no-background navbar-fixed black">
-        <div class="container">  
-            <!-- Start Atribute Navigation -->
-            <div class="attr-nav">
-                <ul>
-                    <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
-                </ul>
-            </div>        
-            <!-- End Atribute Navigation -->
-
-            <!-- Start Header Navigation -->
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo" alt=""></a>
-            </div>
-            <!-- End Header Navigation -->
-        </div>   
-
-        <!-- Start Side Menu -->
-        <div class="side">
-            <a href="#" class="close-side"><i class="fa fa-times"></i></a>
-            <div class="widget">
-                <h6 class="title">Menu</h6>
-                <ul class="link">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Side Menu -->
-    </nav>
-
-    <!-- Header -->
-    <header id="hello">
-        <!-- Container -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="banner">
-                        <img src="https://via.placeholder.com/150" alt="El Buchon Logo" id="logo" class="img-fluid mb-3">
-                        <h1 class="text-warning">MENÚ</h1>
+<body>
+    <div class="container-fluid text-light bg-dark vh-100">
+        <div class="row vh-100">
+            <header class="col-12 bg-warning text-dark py-3 text-center">
+                <h1>Welcome to El Buchon Menu</h1>
+            </header>
+            <!-- Split left side into two sections -->
+            <div class="col-lg-6">
+                <!-- Carousel on the top half -->
+                <div class="carousel-container">
+                    <div id="carouselExampleIndicators" class="carousel slide h-100" data-ride="carousel" data-interval="3000">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner h-100">
+                            <div class="carousel-item active">
+                                <img src="images/large_slider_img.jpg" class="d-block w-100" alt="Slide 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/classic_bg.jpg" class="d-block w-100" alt="Slide 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/feature_bg.jpg" class="d-block w-100" alt="Slide 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/header_bg.jpg" class="d-block w-100" alt="Slide 4">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span the="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
+                <!-- Contact information at the bottom half -->
+                <div class="contact-container">
+                    Ordene y Recoge: 662.466.04.63 / 662.469.13.45
+                </div>
             </div>
-        </div><!-- Container end -->
-    </header><!-- Header end -->
 
-    <!-- Image Slider -->
-    <div id="carouselExampleIndicators" class="carousel slide mb-4" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://via.placeholder.com/800x400?text=Slide+1" class="d-block w-100" alt="Slide 1">
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/800x400?text=Slide+2" class="d-block w-100" alt="Slide 2">
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/800x400?text=Slide+3" class="d-block w-100" alt="Slide 3">
+            <!-- Menu on the right -->
+            <div class="col-lg-6 d-flex flex-column">
+                <div class="menu-section mb-4">
+                    <h2 class="text-warning border-bottom border-warning pb-2 mb-3">Entradas</h2>
+                    <ul class="list-unstyled">
+                        <li class="py-2 border-bottom border-secondary">Orden de Papas (200 grs) - $70.00</li>
+                        <li class="py-2 border-bottom border-secondary">Orden de Papas Francesas (200 grs) - $50.00</li>
+                        <li class="py-2 border-bottom border-secondary">Orden de Papa Boneless (250 grs) - $130.00</li>
+                        <li class="py-2 border-bottom border-secondary">Orden de Boneless (200 grs) - $120.00</li>
+                        <li class="py-2 border-bottom border-secondary">Orden de Aros de Cebolla (10 piezas) - $70.00</li>
+                        <li class="py-2 border-bottom border-secondary">Orden de Dedos de Queso (6 piezas) - $85.00</li>
+                    </ul>
+                </div>
+                <div class="menu-section mb-4">
+                    <h2 class="text-warning border-bottom border-warning pb-2 mb-3">Ensaladas</h2>
+                    <ul class="list-unstyled">
+                        <li class="py-2 border-bottom border-secondary">
+                            <span class="menu-item-name">La LPO - $140.00</span>
+                            <span class="description">pollo a la plancha 200 grs, lechuga, tomate, zanahoria, pepino, aderezo especial, (crotones o tiras de maiz)</span>
+                        </li>
+                        <li class="py-2 border-bottom border-secondary">Botox-Less - $150.00</li>
+                        <li class="py-2 border-bottom border-secondary">Lady - $150.00</li>
+                    </ul>
+                </div>
+                <div class="menu-section mb-4">
+                    <h2 class="text-warning border-bottom border-warning pb-2 mb-3">Burros</h2>
+                    <ul class="list-unstyled">
+                        <li class="py-2 border-bottom border-secondary">
+                            <span class="menu-item-name">Buchón - $140.00</span>
+                            <span class="description">Carne de Res de la mejor calidad a la plancha, tomate, aguacate fresco, con un toque de mayonesa</span>
+                        </li>
+                        <li class="py-2 border-bottom border-secondary">
+                            <span class="menu-item-name">El Pariente - $150.00</span>
+                            <span class="description">Carne adobada de puerco de la mejor calidad con delicioso queso derretido, tomate, aguacate fresco, con un toque de mayonesa</span>
+                        </li>
+                        <li class="py-2 border-bottom border-secondary">
+                            <span class="menu-item-name">El Ahogado - $160.00</span>
+                            <span class="description">Carne de Res de la mejor calidad a la plancha, gratinado de queso, tomate, aguacate fresco, con un toque de mayonesa</span>
+                        </li>
+                        <!-- and so on -->
+                    </ul>
+                </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
-
-    <!-- Menu Sections -->
-    <section class="menu-section mb-4">
-        <h2 class="text-warning border-bottom border-warning pb-2 mb-3">Entradas</h2>
-        <ul class="list-unstyled">
-            <li class="py-2 border-bottom border-secondary">Orden de Papas (200 grs) - $70.00</li>
-            <li class="py-2 border-bottom border-secondary">Orden de Papas Francesas (200 grs) - $50.00</li>
-            <li class="py-2 border-bottom border-secondary">Orden de Papa Boneless (250 grs) - $130.00</li>
-            <li class="py-2 border-bottom border-secondary">Orden de Boneless (200 grs) - $120.00</li>
-            <li class="py-2 border-bottom border-secondary">Orden de Aros de Cebolla (10 piezas) - $70.00</li>
-            <li class="py-2 border-bottom border-secondary">Orden de Dedos de Queso (6 piezas) - $85.00</li>
-        </ul>
-    </section>
-    <section class="menu-section mb-4">
-        <h2 class="text-warning border-bottom border-warning pb-2 mb-3">Ensaladas</h2>
-        <ul class="list-unstyled">
-            <li class="py-2 border-bottom border-secondary">La LPO - $140.00</li>
-            <li class="py-2 border-bottom border-secondary">Botox-Less - $150.00</li>
-            <li class="py-2 border-bottom border-secondary">Lady - $150.00</li>
-        </ul>
-    </section>
-    <section class="menu-section mb-4">
-        <h2 class="text-warning border-bottom border-warning pb-2 mb-3">Burros</h2>
-        <ul class="list-unstyled">
-            <li class="py-2 border-bottom border-secondary">Buchón - $140.00</li>
-            <li class="py-2 border-bottom border-secondary">El Pariente - $150.00</li>
-            <li class="py-2 border-bottom border-secondary">El Ahogado - $160.00</li>
-            <li class="py-2 border-bottom border-secondary">El Plebe - $140.00</li>
-            <li class="py-2 border-bottom border-secondary">El Papi - $150.00</li>
-            <li class="py-2 border-bottom border-secondary">El Arrengando - $160.00</li>
-            <li class="py-2 border-bottom border-secondary">El Mentirillas - $150.00</li>
-            <li class="py-2 border-bottom border-secondary">El Atascado - $160.00</li>
-            <li class="py-2 border-bottom border-secondary">El Ondeado - $150.00</li>
-            <li class="py-2 border-bottom border-secondary">El Chapo - $150.00</li>
-        </ul>
-    </section>
-    <section class="menu-section mb-4">
-        <h2 class="text-warning border-bottom border-warning pb-2 mb-3">Hamburguesas</h2>
-        <ul class="list-unstyled">
-            <li class="py-2 border-bottom border-secondary">La Básica - $100.00</li>
-            <li class="py-2 border-bottom border-secondary">La Bellaka - $135.00</li>
-            <li class="py-2 border-bottom border-secondary">La Pecadora - $140.00</li>
-            <li class="py-2 border-bottom border-secondary">La Belicona - $135.00</li>
-            <li class="py-2 border-bottom border-secondary">La Buchona - $140.00</li>
-            <li class="py-2 border-bottom border-secondary">La Caprichosa - $140.00</li>
-            <li class="py-2 border-bottom border-secondary">La Princesa - $135.00</li>
-            <li class="py-2 border-bottom border-secondary">La Buchifresa - $135.00</li>
-            <li class="py-2 border-bottom border-secondary">La Cariñosa - $140.00</li>
-        </ul>
-    </section>
-    <section class="menu-section mb-4">
-        <h2 class="text-warning border-bottom border-warning pb-2 mb-3">Bebidas</h2>
-        <ul class="list-unstyled">
-            <li class="py-2 border-bottom border-secondary">Coca Cola - $30.00</li>
-            <li class="py-2 border-bottom border-secondary">Sprite - $30.00</li>
-            <li class="py-2 border-bottom border-secondary">Naranja - $30.00</li>
-            <li class="py-2 border-bottom border-secondary">Fresa - $30.00</li>
-            <li class="py-2 border-bottom border-secondary">Jamaica - $30.00</li>
-            <li class="py-2 border-bottom border-secondary">Horchata - $30.00</li>
-            <li class="py-2 border-bottom border-secondary">Cebada - $30.00</li>
-            <li class="py-2 border-bottom border-secondary">Uvola - $30.00</li>
-            <li class="py-2 border-bottom border-secondary">Limonada - $30.00</li>
-            <li class="py-2 border-bottom border-secondary">Agua de Piña - $30.00</li>
-            <li class="py-2 border-bottom border-secondary">Squirt - $30.00</li>
-        </ul>
-    </section>
-    
-    <!-- Footer -->
-    <footer class="text-center mt-4 pt-4 border-top border-warning">
-        <p>Ordena y recoge: 662.466.04.63 / 662.469.13.45</p>
-        <p>Síguenos en nuestras redes sociales:</p>
-        <div class="social-media d-flex justify-content-center">
-            <a href="https://www.facebook.com/elbouchonRB" target="_blank" class="mx-2"><img src="https://via.placeholder.com/30" alt="Facebook"></a>
-            <a href="https://www.instagram.com/elbouchon2023" target="_blank" class="mx-2"><img src="https://via.placeholder.com/30" alt="Instagram"></a>
-        </div>
-    </footer>
-
-    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>		
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="js/bootsnav.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="js/gmaps.min.js"></script>
-    <script type="text/javascript">
-        var map;
-        $(document).ready(function () {
-            map = new GMaps({
-                el: '#ourmaps',
-                lat: 3.139003,
-                lng: 101.686855,
-                scrollwheel: false
-            });
-
-            //locations request
-            map.getElevations({
-                locations: [[3.139003, 101.686855]],
-                callback: function (result, status) {
-                    if (status == google.maps.ElevationStatus.OK) {
-                        for (var i in result) {
-                            map.addMarker({
-                                lat: result[i].location.lat(),
-                                lng: result[i].location.lng(),
-                                infoWindow: {
-                                    content: '<address class="tooltip_address"><b>Junky Burger</b><br />Jalan Awan Hijau, Taman OUG<br />58200 Kuala Lumpur <br />Malaysia <br /></address>'
-                                }
-                            });
-                        }
-                    }
-                }
-            });
-
-        });
-    </script>
-    <script type="text/javascript" src="js/main.js"></script>
-</body>	
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
