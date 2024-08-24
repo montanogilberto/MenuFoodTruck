@@ -32,3 +32,13 @@
     align-items: center;
     justify-content: center;
 }
+
+.header {
+    background-color: #ffc107; /* Header background color */
+    padding: 15px 0; /* Smaller padding for a less bulky appearance */
+    color: #333; /* Header text color */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* Text shadow for depth */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Box shadow for some depth */
+    height: 65px;
+    border-top: 2px solid #20c25e80; /* Adds a visual separator */
+}
