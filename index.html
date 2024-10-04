@@ -8,23 +8,22 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container-fluid text-light bg-dark vh-100">
-        <div class="row vh-100">
-            <header  class="col-12 header text-center">
-                <h1>Bienvenidos El Buchon Menu</h1>
-            </header>
-            <!-- Split left side into two sections -->
-            <div class="col-lg-6">
-                <!-- Carousel on the top half -->
-                <div class="carousel-container">
-                    <div id="carouselExampleIndicators" class="carousel slide h-100" data-ride="carousel" data-interval="3000">
+    <div class="container-fluid text-light bg-dark min-vh-100 d-flex flex-column">
+        <!-- Restored Header -->
+        <header class="header text-center py-4">
+            <h1>Bienvenidos El Buchon Menu</h1>
+        </header>
+
+        <div class="row flex-grow-1">
+            <div class="col-lg-6 d-flex align-items-center">
+                <div class="carousel-container w-100">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                         </ol>
-                        <div class="carousel-inner h-100">
+                        <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="images/burros_1.jpg" class="d-block w-100" alt="Slide 1">
                             </div>
@@ -40,44 +39,28 @@
                             <span class="sr-only">Previous</span>
                         </a>
                         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            <span the="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
                 </div>
-                <!-- Contact information at the bottom half 
-                <div class="contact-container">
-                    Ordene y Recoge: 662.466.04.63 / 662.469.13.45
-                </div>
-                -->
             </div>
 
-            <!-- Menu on the right -->
-            <div class="col-lg-6 d-flex flex-column">
-
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
                 <div class="menu-section mb-4">
                     <h2 class="text-warning border-bottom border-warning pb-2 mb-3">PERCHERONES</h2>
                     <ul class="list-unstyled">
                         <li class="py-2 border-bottom border-secondary">
                             <span class="menu-item-name">El Buchón</span>
-                            <span class="description">Carne de Res de la mejor calidad a la plancha adicionado con aguacate fresco ademas de trozos de tomate, cebolla, chile verde tatemado con una porcion de papas </span>
+                            <span class="description">Carne de Res de la mejor calidad a la plancha adicionado con aguacate fresco ademas de trozos de tomate, cebolla, chile verde tatemado con una porcion de papas</span>
                         </li>
                         <li class="py-2 border-bottom border-secondary">
                             <span class="menu-item-name">El Pariente</span>
-                            <span class="description">Carne Adobada de puerco de la mejor calidad adicionado con aguacate fresco ademas de trozos de tomate, cebolla, chile verde tatemado con una porcion de papas </span>
+                            <span class="description">Carne Adobada de puerco de la mejor calidad adicionado con aguacate fresco ademas de trozos de tomate, cebolla, chile verde tatemado con una porcion de papas</span>
                         </li>
                         <li class="py-2 border-bottom border-secondary">
                             <span class="menu-item-name">El Ondeado</span>
                             <span class="description">Carne de Res de la mejor calidad a la plancha, gratinado de queso, tomate, aguacate fresco, cebolla, chile verde con una porcion de papas</span>
-                        </li>
-                        <li class="py-2 border-bottom border-secondary">
-                            <span class="menu-item-name">Petit - $120.00 - 90 gramos</span>
-                        </li>
-                        <li class="py-2 border-bottom border-secondary">
-                            <span class="menu-item-name">Mediano - $160.00 - 120 gramos </span>
-                        </li>
-                        <li class="py-2 border-bottom border-secondary">
-                            <span class="menu-item-name">Grande - $190.00 - 150 gramos </span>
                         </li>
                     </ul>
                 </div>
@@ -86,17 +69,18 @@
                     <ul class="list-unstyled">
                         <li class="py-2 border-bottom border-secondary">
                             <span class="menu-item-name">LA TUNEADA - $80.00</span>
-                            <span class="description">Quesadilla Carne de Res o Adobada adicionada con chile verde tatemado con una porcion de papas </span>
+                            <span class="description">Quesadilla Carne de Res o Adobada adicionada con chile verde tatemado con una porcion de papas</span>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
 
-    <footer class="bg-dark text-light text-center py-4">
-        <p>&copy; 2024 El Buchon. Todos los derechos reservados. | Contacto: info@elbuchon.com</p>
-    </footer>
+        <!-- Footer -->
+        <footer class="bg-dark text-light text-center py-4 mt-auto">
+            <p>&copy; 2024 El Buchon. Todos los derechos reservados. | Contacto: info@elbuchon.com</p>
+        </footer>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
