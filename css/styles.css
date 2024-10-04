@@ -1,4 +1,10 @@
 
+body {
+    font-size: 1.4em; /* Increase base font size */
+}
+
+
+
 .menu-item-name {
     font-weight: bold; /* Makes the item name bold */
     color: #ffc107; /* Bootstrap's warning color, usually a shade of yellow */
@@ -19,7 +25,7 @@
     border-top: 2px solid #ffc107; /* Adds a visual separator */
 }
 .carousel-item {
-    height: 85%; /* Ensures carousel images cover full height */
+    height: 100%; /* Ensures carousel images cover full height */
 }
 /* Adjust the carousel and contact-info container to better fit the new layout */
 .carousel-container {
@@ -41,4 +47,12 @@
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Box shadow for some depth */
     height: 65px;
     border-top: 2px solid #20c25e80; /* Adds a visual separator */
+}
+
+footer {
+    font-size: 2em; /* Increased font size for visibility */
+    background-color: #000; /* Matches the dark theme */
+    color: #ffc107; /* Accent color */
+    border-top: 2px solid #20c25e80; /* Accent border */
+    padding: 20px 0; /* Extra padding for spacious look */
 }
