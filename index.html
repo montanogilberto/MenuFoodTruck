@@ -6,24 +6,60 @@
     <title>El Buchon Menu</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Inline quick fix for text alignment and font sizes */
+        .header {
+            text-align: center;
+            font-size: 2.5rem; /* Adjusted font size for header */
+        }
+
+        .menu-section .menu-item-name {
+            font-weight: bold;
+            font-size: 1.5rem; /* Increased font size for menu item names */
+        }
+
+        .menu-section .description {
+            font-size: 1.25rem; /* Increased font size for descriptions */
+        }
+
+        .menu-section ul {
+            padding-left: 0;
+        }
+
+        .carousel-container {
+            height: 100%; /* Occupies full height of the column */
+            width: 100%;
+        }
+
+        .carousel-inner, .carousel-item {
+            height: 100%; /* Make carousel occupy full height */
+        }
+
+        .carousel-item img {
+            height: 100%; /* Ensure image height fills the container */
+            width: 100%;
+            object-fit: cover; /* Ensure the image covers the container without distortion */
+        }
+    </style>
 </head>
 <body>
     <div class="container-fluid text-light bg-dark min-vh-100 d-flex flex-column">
-        <!-- Restored Header -->
+        <!-- Header -->
         <header class="header text-center py-4">
             <h1>Bienvenidos El Buchon Menu</h1>
         </header>
-
+        <br/>
         <div class="row flex-grow-1">
-            <div class="col-lg-6 d-flex align-items-center">
+            <!-- Carousel Column -->
+            <div class="col-lg-6 d-flex align-items-stretch">
                 <div class="carousel-container w-100">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                    <div id="carouselExampleIndicators" class="carousel slide h-100" data-ride="carousel" data-interval="3000">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                         </ol>
-                        <div class="carousel-inner">
+                        <div class="carousel-inner h-100">
                             <div class="carousel-item active">
                                 <img src="images/burros_1.jpg" class="d-block w-100" alt="Slide 1">
                             </div>
@@ -46,6 +82,7 @@
                 </div>
             </div>
 
+            <!-- Menu Column -->
             <div class="col-lg-6 d-flex flex-column justify-content-center">
                 <div class="menu-section mb-4">
                     <h2 class="text-warning border-bottom border-warning pb-2 mb-3">PERCHERONES</h2>
@@ -61,6 +98,15 @@
                         <li class="py-2 border-bottom border-secondary">
                             <span class="menu-item-name">El Ondeado</span>
                             <span class="description">Carne de Res de la mejor calidad a la plancha, gratinado de queso, tomate, aguacate fresco, cebolla, chile verde con una porcion de papas</span>
+                        </li>
+                        <li class="py-2 border-bottom border-secondary">
+                            <span class="menu-item-name">Petit - $120.00 - 90 gramos</span>
+                        </li>
+                        <li class="py-2 border-bottom border-secondary">
+                            <span class="menu-item-name">Mediano - $160.00 - 120 gramos </span>
+                        </li>
+                        <li class="py-2 border-bottom border-secondary">
+                            <span class="menu-item-name">Grande - $190.00 - 150 gramos </span>
                         </li>
                     </ul>
                 </div>
