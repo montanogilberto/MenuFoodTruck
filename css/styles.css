@@ -1,29 +1,7 @@
 
-/* styles.css */
-.header {
-    text-align: center;
-    font-size: 2.5rem; /* Adjust header font size */
+body {
+    font-size: 2em; /* Increase base font size */
 }
-
-.menu-section .menu-item-name {
-    font-weight: bold;
-    font-size: 1.5rem; /* Make item name bigger */
-}
-
-.menu-section .description {
-    font-size: 1.25rem; /* Make description text larger */
-}
-
-.menu-section ul {
-    padding-left: 0; /* Remove list padding */
-}
-
-.carousel-container {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
 
 .menu-item-name {
     font-weight: bold; /* Makes the item name bold */
