@@ -33,12 +33,15 @@
     border-top: 2px solid #ffc107; /* Adds a visual separator */
     font-size: 1em;
 }
+
+
 .carousel-item {
     height: 100%; /* Ensures carousel images cover full height */
 }
 /* Adjust the carousel and contact-info container to better fit the new layout */
 .carousel-container {
-    height: 75%; /* Smaller percentage to allow for contact-info */
+    height: 100%; /* Occupies full height of the column */
+    width: 100%;
 }
 .contact-container {
     height: 25%; /* Remaining space for contact info */
@@ -46,6 +49,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.carousel-inner, .carousel-item {
+    height: 100%; /* Make carousel occupy full height */
+}
+
+.carousel-item img {
+    height: 100%; /* Ensure image height fills the container */
+    width: 100%;
+    object-fit: cover; /* Ensure the image covers the container without distortion */
 }
 
 .header {
