@@ -21,6 +21,7 @@ body {
     padding: 10px; /* Padding for spacing */
     text-align: center; /* Centered text */
     border-top: 2px solid #ffc107; /* Adds a visual separator */
+    font-size: 1em;
 }
 .carousel-item {
     height: 100%; /* Ensures carousel images cover full height */
