@@ -2,11 +2,11 @@
 
 .menu-section .menu-item-name {
     font-weight: bold;
-    font-size: 1rem; /* Increased font size for menu item names */
+    font-size: 1.5rem; /* Increased font size for menu item names */
 }
 
 .menu-section .description {
-    font-size: 1rem; /* Increased font size for descriptions */
+    font-size: 1.5rem; /* Increased font size for descriptions */
 }
 
 .menu-section ul {
@@ -61,6 +61,13 @@
     object-fit: cover; /* Ensure the image covers the container without distortion */
 }
 
+.carousel-item img {
+    width: 100%; /* Makes the image take the full width of the container */
+    height: 700px; /* Sets a fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the entire container without distortion */
+}
+
+
 .header {
     background-color: #ffc107; /* Header background color */
     padding: 15px 0; /* Smaller padding for a less bulky appearance */
@@ -72,7 +79,7 @@
 }
 
 footer {
-    font-size: 2em; /* Increased font size for visibility */
+    font-size: .5 em; /* Increased font size for visibility */
     background-color: #000; /* Matches the dark theme */
     color: #ffc107; /* Accent color */
     border-top: 2px solid #20c25e80; /* Accent border */
