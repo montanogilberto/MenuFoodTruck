@@ -1,31 +1,39 @@
-"use strict";
-jQuery(document).ready(function ($) {
+let isSliding = false;
+let firstSlideDuration = 30000; // 20 seconds
+let otherSlidesDuration = 15000; // 15 seconds
+let currentSlideIndex = 0;
 
-//for Preloader
+function setSlideInterval() {
+    let interval = currentSlideIndex === 0 ? firstSlideDuration : otherSlidesDuration;
+    setTimeout(() => {
+        $('#carouselExampleIndicators').carousel('next');
+    }, interval);
+}
 
-    $(window).load(function () {
-        $("#loading").fadeOut(500);
-    });
-
-
-
-// scroll Up
-
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 600) {
-            $('.scrollup').fadeIn('slow');
-        } else {
-            $('.scrollup').fadeOut('slow');
-        }
-    });
-    $('.scrollup').click(function () {
-        $("html, body").animate({scrollTop: 0}, 1000);
-        return false;
-    });
-
-
-
-
-
-    //End
+// Custom slide control
+$('#carouselExampleIndicators').on('slid.bs.carousel', function (event) {
+    currentSlideIndex = $(event.relatedTarget).index();
+    setSlideInterval();
 });
+
+// Synchronize both carousels without infinite loop
+$('#carouselExampleIndicators').on('slide.bs.carousel', function (event) {
+    if (!isSliding) {
+        isSliding = true;
+        $('#menuCarousel2').carousel(event.to).on('slid.bs.carousel', function () {
+            isSliding = false;
+        });
+    }
+});
+
+$('#menuCarousel2').on('slide.bs.carousel', function (event) {
+    if (!isSliding) {
+        isSliding = true;
+        $('#carouselExampleIndicators').carousel(event.to).on('slid.bs.carousel', function () {
+            isSliding = false;
+        });
+    }
+});
+
+// Set the initial interval for the first slide
+setSlideInterval();

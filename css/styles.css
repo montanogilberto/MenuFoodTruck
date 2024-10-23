@@ -1,8 +1,48 @@
+/* Media queries for extra-large screens */
+@media (min-width: 1920px) {
+    h1 {
+        font-size: 4rem; /* Increase font size for headers */
+    }
 
+    .menu-section {
+        font-size: 1.5rem; /* Increase font size for menu sections */
+    }
 
+    .carousel-item img {
+        height: 600px; /* Increase image height for large screens */
+    }
+
+    footer {
+        font-size: 1.2rem; /* Increase footer text size */
+    }
+
+    /* Adjust carousel controls size */
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    body {
+        font-size: 1.25rem; /* Increase base font size for large screens */
+    }
+
+    .container-fluid {
+        max-width: 1600px; /* Set a reasonable max width */
+        margin: 0 auto; /* Center content */
+    }
+}
+
+/* Global styles for carousel images */
+.carousel-item img {
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    width: 100%; /* Makes the image take the full width of the container */
+    height: 100%; /* Ensure the image fills the container height */
+}
+
+/* Font settings for menu sections */
 .menu-section .menu-item-name {
     font-weight: bold;
-    font-size: 1.5rem; /* Ixncreased font size for menu item names */
+    font-size: 1.5rem; /* Increased font size for menu item names */
 }
 
 .menu-section .description {
@@ -17,10 +57,13 @@
     font-weight: bold; /* Makes the item name bold */
     color: #ffc107; /* Bootstrap's warning color, usually a shade of yellow */
 }
+
 .description {
     display: block; /* Makes the description appear on a new line */
     margin-left: 20px; /* Indents the description for better readability */
 }
+
+/* Contact info styling */
 .contact-info {
     position: absolute; /* Positions the contact info over the carousel */
     bottom: 0; /* At the bottom of the carousel */
@@ -34,15 +77,12 @@
     font-size: 1em;
 }
 
-
-.carousel-item {
-    height: 100%; /* Ensures carousel images cover full height */
-}
-/* Adjust the carousel and contact-info container to better fit the new layout */
+/* Carousel layout adjustments */
 .carousel-container {
     height: 100%; /* Occupies full height of the column */
     width: 100%;
 }
+
 .contact-container {
     height: 25%; /* Remaining space for contact info */
     background: #000; /* Matching the theme */
@@ -55,19 +95,7 @@
     height: 100%; /* Make carousel occupy full height */
 }
 
-.carousel-item img {
-    height: 80%; /* Ensure image height fills the container */
-    width: 800%;
-    object-fit: cover; /* Ensure the image covers the container without distortion */
-}
-
-.carousel-item img {
-    width: 100%; /* Makes the image take the full width of the container */
-    height: 700px; /* Sets a fixed height for all images */
-    object-fit: cover; /* Ensures the image covers the entire container without distortion */
-}
-
-
+/* Header styling */
 .header {
     background-color: #ffc107; /* Header background color */
     padding: 15px 0; /* Smaller padding for a less bulky appearance */
@@ -78,8 +106,9 @@
     border-top: 2px solid #20c25e80; /* Adds a visual separator */
 }
 
+/* Footer styling */
 footer {
-    font-size: .5 em; /* Increased font size for visibility */
+    font-size: 0.5em; /* Fixed typo: Increased font size for visibility */
     background-color: #000; /* Matches the dark theme */
     color: #ffc107; /* Accent color */
     border-top: 2px solid #20c25e80; /* Accent border */
