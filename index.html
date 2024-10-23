@@ -21,7 +21,7 @@
             <!-- Carousel Column -->
             <div class="col-lg-6 col-md-12 d-flex align-items-stretch">
                 <div class="carousel-container w-100">
-                    <div id="carouselExampleIndicators" class="carousel slide h-100" data-ride="carousel" data-interval="13000">
+                    <div id="carouselExampleIndicators" class="carousel slide h-100" data-ride="carousel" data-interval="false">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -62,7 +62,7 @@
 
             <!-- Second Carousel for Additional Menus -->
             <div class="col-lg-6 col-md-12 d-flex align-items-stretch">
-                <div id="menuCarousel2" class="carousel slide w-100" data-ride="carousel">
+                <div id="menuCarousel2" class="carousel slide w-100" data-ride="carousel" data-interval="false">
                     <div class="carousel-inner h-100">
                         <!-- First Slide: PERCHERONES -->
                         <div class="carousel-item active">
@@ -174,6 +174,22 @@
 
     <script>
         let isSliding = false;
+        let firstSlideDuration = 20000; // 20 seconds
+        let otherSlidesDuration = 15000; // 15 seconds
+        let currentSlideIndex = 0;
+
+        function setSlideInterval() {
+            let interval = currentSlideIndex === 0 ? firstSlideDuration : otherSlidesDuration;
+            setTimeout(() => {
+                $('#carouselExampleIndicators').carousel('next');
+            }, interval);
+        }
+
+        // Custom slide control
+        $('#carouselExampleIndicators').on('slid.bs.carousel', function (event) {
+            currentSlideIndex = $(event.relatedTarget).index();
+            setSlideInterval();
+        });
 
         // Synchronize both carousels without infinite loop
         $('#carouselExampleIndicators').on('slide.bs.carousel', function (event) {
@@ -193,6 +209,10 @@
                 });
             }
         });
+
+        // Set the initial interval for the first slide
+        setSlideInterval();
+
     </script>
 </body>
 </html>
