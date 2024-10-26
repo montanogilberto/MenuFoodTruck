@@ -1,6 +1,6 @@
 let isSliding = false;
-let firstSlideDuration = 30000; // 20 seconds
-let otherSlidesDuration = 15000; // 15 seconds
+let firstSlideDuration = 60000; // 20 seconds
+let otherSlidesDuration = 45000; // 15 seconds
 let currentSlideIndex = 0;
 
 function setSlideInterval() {

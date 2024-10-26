@@ -35,22 +35,52 @@
 /* Global styles for carousel images */
 .carousel-item img {
     object-fit: cover; /* Ensure the image covers the container without distortion */
-    width: 100%; /* Makes the image take the full width of the container */
-    height: 100%; /* Ensure the image fills the container height */
+    width: 800%; /* Makes the image take the full width of the container */
+    height: 80%; /* Ensure the image fills the container height */
 }
 
 /* Font settings for menu sections */
 .menu-section .menu-item-name {
     font-weight: bold;
-    font-size: 1.5rem; /* Increased font size for menu item names */
+    font-size: 1.50rem; /* Slightly increased font size for menu item names */
+    color: #ffc107; /* Bootstrap's warning color, usually a shade of yellow */
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
 .menu-section .description {
-    font-size: 1.5rem; /* Increased font size for descriptions */
+    font-size: 1.5rem; /* Adjusted font size for description */
+    color: #ccc; /* Slightly lighter font color for better readability */
+    line-height: 1.5rem; /* Better line spacing */
+    margin-bottom: 0.5rem; /* Add margin to separate each item */
+}
+
+.sizes-prices .menu-item-name {
+    font-weight: bold;
+    color: #ffc107; /* Yellow color for the text */
+    padding: 10px;
+    background-color: #333; /* Dark background for the price box */
+    border: 2px solid #ffc107; /* Yellow border */
+    border-radius: 10px; /* Rounded corners for the box */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin-bottom: 10px; /* Space between the boxes */
+    display: block;
+    text-align: center; /* Center the text in the box */
 }
 
 .menu-section ul {
     padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.menu-section li {
+    padding-bottom: 15px; /* Add padding to space out items */
+}
+
+.menu-section {
+    padding: 20px;
+    background-color: #2b2b2b; /* Slightly lighter background to contrast better */
+    border-radius: 10px; /* Rounded corners */
 }
 
 .menu-item-name {
