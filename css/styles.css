@@ -1,33 +1,97 @@
-/* Media queries for extra-large screens */
-@media (min-width: 1920px) {
+/* Media queries for mobile screens */
+@media (max-width: 768px) {
     h1 {
-        font-size: 4rem; /* Increase font size for headers */
+        font-size: 1.8rem; /* Further adjust font size for headers on mobile */
     }
 
-    .menu-section {
-        font-size: 1.5rem; /* Increase font size for menu sections */
+    .menu-section .menu-item-name {
+        font-size: 1.1rem; /* Reduce menu item font size for mobile */
     }
 
+    .menu-section .description {
+        font-size: 1rem; /* Reduce description font size for mobile */
+    }
+
+    .sizes-prices .menu-item-name {
+        font-size: 1.1rem; /* Reduce price box font size for mobile */
+        padding: 6px;
+    }
+
+    /* Ensure carousel images adjust to mobile screen */
     .carousel-item img {
-        height: 600px; /* Increase image height for large screens */
+        object-fit: cover;
+        width: 100%;
+        height: auto; /* Make height flexible */
+    }
+
+    /* Adjust carousel controls for mobile */
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 1.8rem;
+        height: 1.8rem; /* Smaller carousel controls */
+    }
+
+    /* Padding adjustments for mobile */
+    .menu-section {
+        padding: 8px; /* Further reduce padding for mobile */
     }
 
     footer {
-        font-size: 1.2rem; /* Increase footer text size */
+        font-size: 0.9rem; /* Slightly reduce footer text size */
+    }
+
+    .container-fluid {
+        max-width: 100%; /* Use full screen width for mobile */
+        padding: 0 10px; /* Add small padding on the sides */
+    }
+
+    .carousel-container {
+        height: auto; /* Ensure the carousel height is dynamic on mobile */
+    }
+
+    /* Reduce header height and spacing on mobile */
+    .header {
+        height: 45px; /* Reduce header height */
+        padding: 8px 0; /* Less padding for the header */
+    }
+
+    /* Ensure the QR code is centered and adapts well to small screens */
+    #qrcode {
+        margin: 0 auto;
+        width: 130px; /* Reduce QR code size */
+        height: 130px;
+    }
+}
+
+/* Media queries for extra-large screens */
+@media (min-width: 1920px) {
+    h1 {
+        font-size: 3.5rem; /* Slightly decrease font size for headers */
+    }
+
+    .menu-section {
+        font-size: 1.4rem; /* Reduce font size for menu sections */
+    }
+
+    .carousel-item img {
+        height: 500px; /* Slightly reduce image height for large screens */
+    }
+
+    footer {
+        font-size: 1.1rem; /* Slightly reduce footer text size */
     }
 
     /* Adjust carousel controls size */
     .carousel-control-prev-icon, .carousel-control-next-icon {
-        width: 4rem;
-        height: 4rem;
+        width: 3.5rem;
+        height: 3.5rem;
     }
 
     body {
-        font-size: 1.25rem; /* Increase base font size for large screens */
+        font-size: 1.2rem; /* Slightly reduce base font size */
     }
 
     .container-fluid {
-        max-width: 1600px; /* Set a reasonable max width */
+        max-width: 1500px; /* Slightly reduce the max width */
         margin: 0 auto; /* Center content */
     }
 }
@@ -35,112 +99,103 @@
 /* Global styles for carousel images */
 .carousel-item img {
     object-fit: cover; /* Ensure the image covers the container without distortion */
-    width: 800%; /* Makes the image take the full width of the container */
-    height: 80%; /* Ensure the image fills the container height */
+    width: 100%; /* Adjust the image to fully fit the container */
+    height: auto; /* Make the height dynamic */
 }
 
 /* Font settings for menu sections */
 .menu-section .menu-item-name {
     font-weight: bold;
-    font-size: 1.50rem; /* Slightly increased font size for menu item names */
-    color: #ffc107; /* Bootstrap's warning color, usually a shade of yellow */
+    font-size: 1.35rem; /* Slightly reduce font size for menu item names */
+    color: #ffc107; /* Bootstrap's warning color */
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 .menu-section .description {
-    font-size: 1.5rem; /* Adjusted font size for description */
-    color: #ccc; /* Slightly lighter font color for better readability */
-    line-height: 1.5rem; /* Better line spacing */
-    margin-bottom: 0.5rem; /* Add margin to separate each item */
+    font-size: 1.2rem; /* Slightly reduce description font size */
+    color: #ccc; /* Light font color for better readability */
+    line-height: 1.4rem; /* Adjusted line spacing */
+    margin-bottom: 0.4rem; /* Reduced margin */
 }
 
 .sizes-prices .menu-item-name {
     font-weight: bold;
     color: #ffc107; /* Yellow color for the text */
-    padding: 10px;
+    padding: 8px; /* Reduced padding for price boxes */
     background-color: #333; /* Dark background for the price box */
     border: 2px solid #ffc107; /* Yellow border */
-    border-radius: 10px; /* Rounded corners for the box */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    margin-bottom: 10px; /* Space between the boxes */
+    border-radius: 8px; /* Slightly less rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+    margin-bottom: 8px; /* Less space between the boxes */
     display: block;
     text-align: center; /* Center the text in the box */
 }
 
 .menu-section ul {
     padding-left: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Reduce bottom margin */
 }
 
 .menu-section li {
-    padding-bottom: 15px; /* Add padding to space out items */
+    padding-bottom: 10px; /* Reduce padding between items */
 }
 
 .menu-section {
-    padding: 20px;
-    background-color: #2b2b2b; /* Slightly lighter background to contrast better */
-    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Reduce padding inside menu sections */
+    background-color: #2b2b2b; /* Slightly lighter background */
+    border-radius: 8px; /* Less rounded corners */
 }
 
 .menu-item-name {
-    font-weight: bold; /* Makes the item name bold */
-    color: #ffc107; /* Bootstrap's warning color, usually a shade of yellow */
+    font-weight: bold;
+    color: #ffc107; /* Keep the warning color for menu item names */
 }
 
 .description {
-    display: block; /* Makes the description appear on a new line */
-    margin-left: 20px; /* Indents the description for better readability */
-}
-
-/* Contact info styling */
-.contact-info {
-    position: absolute; /* Positions the contact info over the carousel */
-    bottom: 0; /* At the bottom of the carousel */
-    left: 0; /* Starts from the left side */
-    width: 100%; /* Full width of the carousel */
-    background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
-    color: #ffffff; /* White text */
-    padding: 10px; /* Padding for spacing */
-    text-align: center; /* Centered text */
-    border-top: 2px solid #ffc107; /* Adds a visual separator */
-    font-size: 1em;
-}
-
-/* Carousel layout adjustments */
-.carousel-container {
-    height: 100%; /* Occupies full height of the column */
-    width: 100%;
-}
-
-.contact-container {
-    height: 25%; /* Remaining space for contact info */
-    background: #000; /* Matching the theme */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.carousel-inner, .carousel-item {
-    height: 100%; /* Make carousel occupy full height */
+    display: block;
+    margin-left: 15px; /* Reduced indentation for descriptions */
 }
 
 /* Header styling */
 .header {
     background-color: #ffc107; /* Header background color */
-    padding: 15px 0; /* Smaller padding for a less bulky appearance */
+    padding: 10px 0; /* Reduce padding to make it more compact */
     color: #333; /* Header text color */
+    text-align: center; /* Ensure text is centered */
+    font-size: 2rem; /* Adjust font size for better alignment */
     text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* Text shadow for depth */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Box shadow for some depth */
-    height: 65px;
+    height: auto; /* Allow the height to be dynamic */
     border-top: 2px solid #20c25e80; /* Adds a visual separator */
+    margin-bottom: 10px; /* Add some space below the header */
 }
+
 
 /* Footer styling */
 footer {
-    font-size: 0.5em; /* Fixed typo: Increased font size for visibility */
-    background-color: #000; /* Matches the dark theme */
-    color: #ffc107; /* Accent color */
+    font-size: 0.9rem; /* Slightly larger footer text */
+    background-color: #000; /* Dark background for the footer */
+    color: #ffc107; /* Accent color for footer text */
     border-top: 2px solid #20c25e80; /* Accent border */
-    padding: 20px 0; /* Extra padding for spacious look */
+    padding: 15px 0; /* Reduced padding for footer */
+}
+
+/* Carousel layout adjustments */
+.carousel-container {
+    height: auto; /* Flexible height for the carousel */
+    width: 100%;
+}
+
+/* Adjusting contact info styling */
+.contact-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4); /* Slightly more transparent */
+    color: #ffffff;
+    padding: 8px; /* Less padding */
+    text-align: center;
+    font-size: 0.9em; /* Smaller font size for contact info */
 }
