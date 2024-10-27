@@ -1,7 +1,7 @@
 /* Media queries for mobile screens */
 @media (max-width: 768px) {
     h1 {
-        font-size: 1.8rem; /* Further adjust font size for headers on mobile */
+        font-size: 1rem; /* Further adjust font size for headers on mobile */
     }
 
     .menu-section .menu-item-name {
@@ -13,7 +13,7 @@
     }
 
     .sizes-prices .menu-item-name {
-        font-size: 1.1rem; /* Reduce price box font size for mobile */
+        font-size: 0.70rem; /* Reduce price box font size for mobile */
         padding: 6px;
     }
 
@@ -87,7 +87,7 @@
     }
 
     body {
-        font-size: 1.2rem; /* Slightly reduce base font size */
+        font-size: 0.80rem; /* Slightly reduce base font size */
     }
 
     .container-fluid {
@@ -163,7 +163,7 @@
     padding: 10px 0; /* Reduce padding to make it more compact */
     color: #333; /* Header text color */
     text-align: center; /* Ensure text is centered */
-    font-size: 2rem; /* Adjust font size for better alignment */
+    font-size: 1.5rem; /* Adjust font size for better alignment */
     text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* Text shadow for depth */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Box shadow for some depth */
     height: auto; /* Allow the height to be dynamic */
