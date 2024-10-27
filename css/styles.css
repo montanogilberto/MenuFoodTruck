@@ -13,8 +13,8 @@
     }
 
     .sizes-prices .menu-item-name {
-        font-size: 0.70rem; /* Reduce price box font size for mobile */
-        padding: 6px;
+        font-size: 0.9rem; /* Reduce price box font size for mobile */
+        padding: 4px;
     }
 
     /* Ensure carousel images adjust to mobile screen */
@@ -50,15 +50,15 @@
 
     /* Reduce header height and spacing on mobile */
     .header {
-        height: 45px; /* Reduce header height */
-        padding: 8px 0; /* Less padding for the header */
+        height: 20px; /* Reduce header height */
+        padding: 4px 0; /* Less padding for the header */
     }
 
     /* Ensure the QR code is centered and adapts well to small screens */
     #qrcode {
         margin: 0 auto;
-        width: 130px; /* Reduce QR code size */
-        height: 130px;
+        width: 100px; /* Reduce QR code size */
+        height: 100px;
     }
 }
 
@@ -87,7 +87,7 @@
     }
 
     body {
-        font-size: 0.80rem; /* Slightly reduce base font size */
+        font-size: 0.8rem; /* Slightly reduce base font size */
     }
 
     .container-fluid {
@@ -106,43 +106,43 @@
 /* Font settings for menu sections */
 .menu-section .menu-item-name {
     font-weight: bold;
-    font-size: 1.35rem; /* Slightly reduce font size for menu item names */
+    font-size: 1.2rem; /* Further reduce font size for menu item names */
     color: #ffc107; /* Bootstrap's warning color */
     display: block;
     margin-bottom: 0.4rem;
 }
 
 .menu-section .description {
-    font-size: 1.2rem; /* Slightly reduce description font size */
+    font-size: 1rem; /* Further reduce description font size */
     color: #ccc; /* Light font color for better readability */
-    line-height: 1.4rem; /* Adjusted line spacing */
+    line-height: 1.2rem; /* Adjusted line spacing */
     margin-bottom: 0.4rem; /* Reduced margin */
 }
 
 .sizes-prices .menu-item-name {
     font-weight: bold;
     color: #ffc107; /* Yellow color for the text */
-    padding: 8px; /* Reduced padding for price boxes */
+    padding: 6px; /* Reduced padding for price boxes */
     background-color: #333; /* Dark background for the price box */
     border: 2px solid #ffc107; /* Yellow border */
     border-radius: 8px; /* Slightly less rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Lighter shadow */
-    margin-bottom: 8px; /* Less space between the boxes */
+    margin-bottom: 6px; /* Less space between the boxes */
     display: block;
     text-align: center; /* Center the text in the box */
 }
 
 .menu-section ul {
     padding-left: 0;
-    margin-bottom: 15px; /* Reduce bottom margin */
+    margin-bottom: 10px; /* Reduce bottom margin */
 }
 
 .menu-section li {
-    padding-bottom: 10px; /* Reduce padding between items */
+    padding-bottom: 8px; /* Reduce padding between items */
 }
 
 .menu-section {
-    padding: 15px; /* Reduce padding inside menu sections */
+    padding: 12px; /* Reduce padding inside menu sections */
     background-color: #2b2b2b; /* Slightly lighter background */
     border-radius: 8px; /* Less rounded corners */
 }
@@ -160,7 +160,7 @@
 /* Header styling */
 .header {
     background-color: #ffc107; /* Header background color */
-    padding: 10px 0; /* Reduce padding to make it more compact */
+    padding: 5px 0; /* Reduce padding to make it more compact */
     color: #333; /* Header text color */
     text-align: center; /* Ensure text is centered */
     font-size: 1.5rem; /* Adjust font size for better alignment */
@@ -171,14 +171,13 @@
     margin-bottom: 10px; /* Add some space below the header */
 }
 
-
 /* Footer styling */
 footer {
-    font-size: 0.9rem; /* Slightly larger footer text */
+    font-size: 0.8rem; /* Slightly larger footer text */
     background-color: #000; /* Dark background for the footer */
     color: #ffc107; /* Accent color for footer text */
     border-top: 2px solid #20c25e80; /* Accent border */
-    padding: 15px 0; /* Reduced padding for footer */
+    padding: 10px 0; /* Reduced padding for footer */
 }
 
 /* Carousel layout adjustments */
