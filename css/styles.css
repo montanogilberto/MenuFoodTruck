@@ -113,7 +113,7 @@
 }
 
 .menu-section .description {
-    font-size: 0.70rem; /* Further reduce description font size */
+    font-size: 1rem; /* Further reduce description font size */
     color: #ccc; /* Light font color for better readability */
     line-height: 0.90rem; /* Adjusted line spacing */
     margin-bottom: 0.4rem; /* Reduced margin */
