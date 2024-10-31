@@ -2,10 +2,17 @@ let isSliding = false;
 let firstSlideDuration = 60000; // 60 seconds
 let otherSlidesDuration = 45000; // 45 seconds
 let currentSlideIndex = 0;
+let slideTimeout; // Declare a variable to hold the timeout reference
 
 function setSlideInterval() {
+    // Clear the existing timeout if there is one
+    if (slideTimeout) {
+        clearTimeout(slideTimeout);
+    }
+
     let interval = currentSlideIndex === 0 ? firstSlideDuration : otherSlidesDuration;
-    setTimeout(() => {
+
+    slideTimeout = setTimeout(() => {
         $('#carouselExampleIndicators').carousel('next');
     }, interval);
 }
@@ -13,7 +20,7 @@ function setSlideInterval() {
 // Custom slide control
 $('#carouselExampleIndicators').on('slid.bs.carousel', function (event) {
     currentSlideIndex = $(event.relatedTarget).index();
-    setSlideInterval();
+    setSlideInterval(); // Reset the interval whenever a new slide is shown
 });
 
 // Synchronize both carousels without infinite loop
@@ -50,7 +57,6 @@ let qrcode = new QRCode(document.getElementById("qrcode"), {
     correctLevel: QRCode.CorrectLevel.H // Error correction level
 });
 
-
 function toggleFullScreen() {
     if (!document.fullscreenElement) {
         document.documentElement.requestFullscreen().catch(err => {
@@ -74,4 +80,28 @@ document.addEventListener('fullscreenchange', () => {
         document.getElementById('fullscreenIcon').style.display = 'inline-block';
         document.getElementById('exitFullscreenIcon').style.display = 'none';
     }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const videoSlide = document.getElementById('videoSlide');
+    const carousel = $('#carouselExampleIndicators');
+
+    // Pause carousel auto-cycling and play video when the video slide is shown
+    carousel.on('slid.bs.carousel', function (event) {
+        if ($(event.relatedTarget).find('video').length > 0) {
+            // Pause carousel auto-cycling and play the video
+            carousel.carousel('pause');
+            videoSlide.play().catch(err => {
+                console.error(`Error playing the video: ${err}`);
+            });
+        } else {
+            // Resume carousel auto-cycling if not on the video slide
+            setSlideInterval();
+        }
+    });
+
+    // Resume carousel auto-cycling when the video ends
+    videoSlide.addEventListener('ended', function () {
+        carousel.carousel('next');
+    });
 });

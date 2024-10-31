@@ -13,8 +13,8 @@
     }
 
     .sizes-prices .menu-item-name {
-        font-size: 0.9rem; /* Reduce price box font size for mobile */
-        padding: 4px;
+        font-size: 0.5rem; /* Reduce price box font size for mobile */
+        padding: 2px;
     }
 
     /* Ensure carousel images adjust to mobile screen */
@@ -139,10 +139,11 @@
 
 .sizes-prices .menu-item-name {
     font-weight: bold;
+    font-size: 1rem;
     color: #ffc107; /* Yellow color for the text */
-    padding: 6px; /* Reduced padding for price boxes */
+    padding: 2px; /* Reduced padding for price boxes */
     background-color: #333; /* Dark background for the price box */
-    border: 2px solid #ffc107; /* Yellow border */
+    border: 1px solid #ffc107; /* Yellow border */
     border-radius: 8px; /* Slightly less rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Lighter shadow */
     margin-bottom: 6px; /* Less space between the boxes */
@@ -236,4 +237,19 @@ footer {
     font-size: 1.2rem;
     font-weight: bold;
     padding: 5px 10px;
+}
+
+.video-size {
+    max-width: 50%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the video */
+    display: block; /* Ensure it's treated as a block element */
+}
+
+
+/* Add a responsive rule to adjust video size for different screen sizes */
+@media (max-width: 768px) {
+    .carousel-item video {
+        height: 30%; /* Adjust height for smaller screens */
+    }
 }
