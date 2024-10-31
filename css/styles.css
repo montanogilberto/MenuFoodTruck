@@ -6,11 +6,10 @@
 
     .menu-section .menu-item-name {
         font-size: 1rem; /* Reduce menu item font size for mobile */
-        margin-bottom: 5px;
     }
 
     .menu-section .description {
-        font-size: 0.9rem; /* Reduce description font size for mobile */
+        font-size: 1.2rem; /* Reduce description font size for mobile */
     }
 
     .sizes-prices .menu-item-name {
@@ -18,65 +17,8 @@
         padding: 1px;
     }
 
-    /* Ensure carousel images adjust to mobile screen */
-    .carousel-item img {
-        object-fit: cover;
-        width: 100%;
-        height: auto; /* Make height flexible */
-    }
-
-    /* Adjust carousel controls for mobile */
-    .carousel-control-prev-icon, .carousel-control-next-icon {
-        width: 1.8rem;
-        height: 1.8rem; /* Smaller carousel controls */
-    }
-
-    /* Padding adjustments for mobile */
     .menu-section {
-        padding: 2px; /* Further reduce padding for mobile */
-    }
-
-    footer {
-        font-size: 0.9rem; /* Slightly reduce footer text size */
-    }
-
-    .container-fluid {
-        max-width: 100%; /* Use full screen width for mobile */
-        padding: 0 10px; /* Add small padding on the sides */
-    }
-
-    .carousel-container {
-        height: auto; /* Ensure the carousel height is dynamic on mobile */
-    }
-
-    /* Reduce header height and spacing on mobile */
-    .header {
-        background-color: #ffc107; /* Header background color */
-        color: #333; /* Header text color */
-        text-align: center; /* Center the text */
-        font-size: 1.5rem; /* Adjust font size */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for depth */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
-        border-top: 2px solid #20c25e80; /* Top border */
-        display: flex;
-        justify-content: space-between; /* Space out the content */
-        align-items: center; /* Center vertically */
-        padding: 10px 20px; /* Adjust padding */
-    }
-
-    .header .btn {
-        background-color: transparent; /* Transparent background */
-        border: none; /* No border */
-        font-size: 1.5rem; /* Adjust size */
-        color: #333; /* Icon color */
-        margin-left: 10px; /* Add space between icons */
-    }
-
-    /* Ensure the QR code is centered and adapts well to small screens */
-    #qrcode {
-        margin: 0 auto;
-        width: 100px; /* Reduce QR code size */
-        height: 100px;
+        padding: 8px; /* Reduce padding for better spacing */
     }
 }
 
@@ -92,23 +34,20 @@
 
     .menu-section .description {
         font-size: 1.3rem; /* Increase description font size */
+        margin-bottom: 0.5rem; /* Reduce spacing */
     }
 
     .sizes-prices .menu-item-name {
-        font-size: 1.3rem; /* Increase price box font size */
+        font-size: 1.2rem; /* Adjust size for large screens */
     }
 
-    footer {
-        font-size: 1.2rem; /* Increase footer text size */
+    .menu-section {
+        padding: 10px; /* Adjust padding */
+        margin-bottom: 15px; /* Reduce bottom margin */
     }
 
     body {
         font-size: 1rem; /* Adjust base font size */
-    }
-
-    .container-fluid {
-        max-width: 1500px; /* Slightly reduce the max width */
-        margin: 0 auto; /* Center content */
     }
 }
 
@@ -119,143 +58,99 @@
     height: auto; /* Make the height dynamic */
 }
 
-/* Font settings for menu sections */
+/* Menu item and description styling */
 .menu-section .menu-item-name {
     font-weight: bold;
-    font-size: 1.2rem; /* Standard font size for menu item names */
-    color: #ffc107; /* Bootstrap's warning color */
-    display: block;
-    margin-bottom: 0.4rem;
+    font-size: 1.2rem; /* Standard font size */
+    color: #ffc107; /* Yellow color */
+    display: block; /* Make sure it stays on its own line */
+    margin-bottom: 0.2rem; /* Reduce margin */
+}
+
+.menu-section .menu-price {
+    font-weight: bold;
+    font-size: 1rem; /* Adjust font size for price */
+    color: #ffc107; /* Yellow color */
+    display: inline-block; /* Allow price to be inline with title */
+    margin-right: 5px; /* Add space after price */
 }
 
 .menu-section .description {
-    font-size: 1rem; /* Standard description font size */
-    color: #ccc; /* Light font color for better readability */
-    line-height: 1.2rem; /* Adjusted line spacing */
-    margin-bottom: 0.2rem; /* Reduced margin */
+    font-size: 1.2rem; /* Standard description font size */
+    color: #ccc; /* Light font color */
+    display: block; /* Ensure it starts on a new line */
+    line-height: 1.2rem; /* Adjust line spacing */
+    margin-bottom: 0.2rem; /* Reduce margin */
 }
 
+/* Price box styling */
 .sizes-prices .menu-item-name {
-    font-weight: bold;
     font-size: 1rem;
     color: #ffc107; /* Yellow color for the text */
-    padding: 2px; /* Reduced padding for price boxes */
-    background-color: #333; /* Dark background for the price box */
+    padding: 4px; /* Adjust padding */
+    background-color: #333; /* Dark background */
     border: 1px solid #ffc107; /* Yellow border */
-    border-radius: 8px; /* Slightly less rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Lighter shadow */
-    margin-bottom: 4px; /* Less space between the boxes */
+    border-radius: 5px; /* Adjust corner radius */
+    margin-bottom: 4px; /* Reduce space between the boxes */
     display: block;
-    text-align: center; /* Center the text in the box */
+    text-align: center;
 }
 
-.menu-section ul {
-    padding-left: 0;
-    margin-bottom: 5px; /* Reduce bottom margin */
-}
-
-.menu-section li {
-    padding-bottom: 2px; /* Reduce padding between items */
-    border-bottom: none; /* Remove the bottom border */
-}
-
+/* Menu section container styling */
 .menu-section {
-    padding: 12px; /* Reduce padding inside menu sections */
+    padding: 8px; /* Adjust padding inside */
     background-color: #2b2b2b; /* Slightly lighter background */
-    border-radius: 8px; /* Less rounded corners */
-}
-
-.menu-item-name {
-    font-weight: bold;
-    color: #ffc107; /* Keep the warning color for menu item names */
-}
-
-.description {
-    display: block;
-    margin-left: 15px; /* Reduced indentation for descriptions */
+    border-radius: 8px; /* Rounded corners */
 }
 
 /* Header styling */
 .header {
     background-color: #ffc107; /* Header background color */
-    padding: 5px 0; /* Reduce padding to make it more compact */
+    padding: 5px 0; /* Compact padding */
     color: #333; /* Header text color */
-    text-align: center; /* Ensure text is centered */
-    font-size: 1rem; /* Adjust font size for better alignment */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* Text shadow for depth */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Box shadow for some depth */
-    height: auto; /* Allow the height to be dynamic */
-    border-top: 2px solid #20c25e80; /* Adds a visual separator */
-    margin-bottom: 10px; /* Add some space below the header */
+    text-align: center; /* Center the text */
+    font-size: 1.5rem; /* Adjust font size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    border-top: 2px solid #20c25e80; /* Accent border */
 }
 
 /* Footer styling */
 footer {
-    font-size: 0.9rem; /* Slightly larger footer text */
-    background-color: #000; /* Dark background for the footer */
-    color: #ffc107; /* Accent color for footer text */
+    font-size: 0.9rem; /* Adjust footer text size */
+    background-color: #000; /* Dark background */
+    color: #ffc107; /* Yellow text */
+    padding: 10px 0; /* Reduce padding */
     border-top: 2px solid #20c25e80; /* Accent border */
-    padding: 10px 0; /* Reduced padding for footer */
 }
 
-/* Carousel layout adjustments */
-.carousel-container {
-    height: auto; /* Flexible height for the carousel */
-    width: 100%;
+/* Adjust QR code styling */
+#qrcode {
+    margin: 20px auto; /* Center and add space */
+    width: 200px; /* Adjust size */
+    height: 200px;
 }
 
-/* Adjusting contact info styling */
-.contact-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0,0,0,0.4); /* Slightly more transparent */
-    color: #ffffff;
-    padding: 8px; /* Less padding */
-    text-align: center;
-    font-size: 1rem; /* Adjusted font size */
+/* Add a responsive rule to adjust video size */
+@media (max-width: 768px) {
+    .carousel-item video {
+        height: 30%; /* Adjust height */
+    }
 }
 
-#fullscreenButton,
-#exitFullscreenButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 1000;
-}
-
-#exitFullscreenIcon {
-    color: #d9534f; /* Red color for close icon */
-}
-
-#exitFullscreenButton {
-    background-color: #d9534f; /* Red color for the close button */
-    border: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 5px 10px;
+.carousel-item img,
+.carousel-item video {
+    object-fit: cover; /* Ensures content fits within the container without distortion */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height for uniformity */
+    max-height: 500px; /* Set a consistent max height */
+    border-radius: 8px; /* Add rounded corners to match images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for consistency */
 }
 
 .video-size {
-    max-width: 50%; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 auto; /* Center the video */
-    display: block; /* Ensure it's treated as a block element */
-}
-
-#qrcode {
-    margin: 0 auto; /* Center horizontally */
-    width: 200px; /* Adjust size as needed */
-    height: 200px;
-    padding: 10px; /* Optional: Add padding */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
-}
-
-/* Add a responsive rule to adjust video size for different screen sizes */
-@media (max-width: 768px) {
-    .carousel-item video {
-        height: 30%; /* Adjust height for smaller screens */
-    }
+    object-fit: cover; /* Ensures the video fits the container like the images */
+    width: 100%; /* Matches the image width */
+    height: 100%; /* Matches the image height */
+    border-radius: 8px; /* Same corner radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
