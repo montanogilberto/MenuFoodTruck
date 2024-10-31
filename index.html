@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-
 </head>
 <body>
     <div class="container-fluid text-light bg-dark min-vh-100 d-flex flex-column">
@@ -22,7 +21,7 @@
                 <i id="exitFullscreenIcon" class="fas fa-times btn" onclick="exitFullScreen()" style="display: none; cursor: pointer;"></i>
             </div>
         </header>
-        <br/>
+        <br />
         <div class="row flex-grow-1">
             <!-- Carousel Column -->
             <div class="col-lg-6 col-sd-12 d-flex align-items-stretch">
@@ -44,11 +43,9 @@
                             <div class="carousel-item">
                                 <img src="images/quesadilles-de-pollastre-ametller.webp" class="d-block w-100" alt="KESADILLAS">
                             </div>
-
                             <div class="carousel-item">
                                 <img src="images/Tacos-Adobada.webp" class="d-block w-100" alt="TACOS">
                             </div>
-
                             <div class="carousel-item">
                                 <img src="images/orden_papas.avif" class="d-block w-100" alt="ENTRADAS">
                             </div>
@@ -61,14 +58,13 @@
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
-                            <div class="carousel-item">
-                                <div class="d-flex flex-column justify-content-center align-items-center h-100">
-                                    <h2 class="text-warning mb-3">Scan Codigo QR </h2>
-                                    <p class="text-light mb-3">Accede a nuestro menú completo escaneando el código a continuación:</p>
-                                    <div id="qrcode"></div>
+                            <div class="carousel-item qr-slide">
+                                <div>
+                                    <h2 class="text-warning text-center">Scan Código QR</h2>
+                                    <p class="text-center text-light">Accede a nuestro menú completo</p>
+                                    <div id="qrcode"></div> <!-- Ensure this matches the ID in your QR code generation script -->
                                 </div>
                             </div>
-                            
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -89,57 +85,41 @@
                         <!-- First Slide: PERCHERONES -->
                         <div class="carousel-item active">
                             <div class="menu-section mb-4">
-                                <h2 class="text-warning border-bottom border-warning pb-2 mb-3">PERCHERONES</h2>
+                                <h2 class="text-warning border-bottom border-warning">PERCHERONES</h2>
                                 <ul class="list-unstyled">
-                                    <!-- El Buchón -->
-                                    <li class="py-3 border-bottom border-secondary">
+                                    <li class="py-3">
                                         <span class="menu-item-name">El Buchón</span>
                                         <p class="description">
                                             Carne de Res de la mejor calidad a la plancha adicionado con aguacate fresco, además de trozos de tomate, cebolla, chile verde tatemado con una porción de papas.
                                         </p>
                                     </li>
-                                    <!-- El Pariente -->
-                                    <li class="py-3 border-bottom border-secondary">
+                                    <li>
                                         <span class="menu-item-name">El Pariente</span>
                                         <p class="description">
                                             Carne Adobada de puerco de la mejor calidad adicionado con aguacate fresco, además de trozos de tomate, cebolla, chile verde tatemado con una porción de papas.
                                         </p>
                                     </li>
-                                    <!-- El Ondeado -->
-                                    <li class="py-3 border-bottom border-secondary">
+                                    <li class="py-3">
                                         <span class="menu-item-name">El Ondeado</span>
                                         <p class="description">
                                             Carne de Res de la mejor calidad a la plancha, gratinado de queso, trozos de tomate, cebolla, chile verde con una porción de papas.
                                         </p>
                                     </li>
-                                    <!-- Sizes and Prices -->
                                     <div class="sizes-prices">
                                         <div class="row">
                                             <div class="col-md-6 col-sm-12">
-                                                <div class="menu-item-name">
-                                                    </i> KID'S - $80.00 - 50 gr
-                                                </div>
-                                                <div class="menu-item-name">
-                                                    </i> PETIT - $100.00 - 60 gr
-                                                </div>
-                                                <div class="menu-item-name">
-                                                    </i> CHICO - $130.00 - 90 gr
-                                                </div>
+                                                <div class="menu-item-name">KID'S - $80.00 - 50 gr</div>
+                                                <div class="menu-item-name">PETIT - $100.00 - 60 gr</div>
+                                                <div class="menu-item-name">CHICO - $130.00 - 90 gr</div>
                                             </div>
                                             <div class="col-md-6 col-sm-12">
-                                                <div class="menu-item-name">
-                                                    </i> Mediano - $170.00 - 120 gr
-                                                </div>
-                                                <div class="menu-item-name">
-                                                    </i> Grande - $200.00 - 150 gr
-                                                </div>
+                                                <div class="menu-item-name">Mediano - $170.00 - 120 gr</div>
+                                                <div class="menu-item-name">Grande - $200.00 - 150 gr</div>
                                             </div>
                                         </div>
                                     </div>
-
                                 </ul>
                             </div>
-                            
                         </div>
 
                         <!-- Second Slide: KESADILLAS -->
@@ -159,7 +139,7 @@
                             </div>
                         </div>
 
-                        <!--  Slide: TACOS -->
+                        <!-- Slide: TACOS -->
                         <div class="carousel-item">
                             <div class="menu-section mb-4">
                                 <h2 class="text-warning border-bottom border-warning pb-2 mb-3">TACOS</h2>
@@ -172,7 +152,7 @@
                             </div>
                         </div>
 
-                        <!--  Slide: ENTRADAS -->
+                        <!-- Slide: ENTRADAS -->
                         <div class="carousel-item">
                             <div class="menu-section mb-4">
                                 <h2 class="text-warning border-bottom border-warning pb-2 mb-3">ENTRADAS</h2>
@@ -185,7 +165,7 @@
                             </div>
                         </div>
 
-                        <!-- Fourth Slide: BEBIDAS -->
+                        <!-- Slide: BEBIDAS -->
                         <div class="carousel-item">
                             <div class="menu-section mb-4">
                                 <h2 class="text-warning border-bottom border-warning pb-2 mb-3">BEBIDAS</h2>
@@ -201,28 +181,29 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- Fourth Slide: Promociones  -->
+
+                        <!-- Slide: PROMOCIONES -->
                         <div class="carousel-item">
                             <div class="menu-section mb-4">
                                 <h2 class="text-warning border-bottom border-warning pb-2 mb-3">PROMOCIONES</h2>
                                 <ul class="list-unstyled">
                                     <li class="py-2 border-bottom border-secondary">
                                         <span class="menu-item-name"><i class="fas fa-gem"></i> 2 PETIT $160</span>
-                                        <span class="description">PETIT (todas las presentaciones) </span>
                                         <span class="description">PETIT (todas las presentaciones)</span>
-                                                <!-- QR Code Section -->
-
+                                        <span class="description">PETIT (todas las presentaciones)</span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        
-                    </div>
 
+                        <!-- Slide: QR -->
+                        <div class="carousel-item">
+                            <div class="menu-section mb-4"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
 
         <!-- Footer -->
         <footer class="bg-dark text-light text-center py-4 mt-auto">
@@ -230,13 +211,10 @@
         </footer>
     </div>
 
-    <!-- Place your JavaScript files just before the closing body tag -->
+    <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-
-    
 </body>
 </html>
-

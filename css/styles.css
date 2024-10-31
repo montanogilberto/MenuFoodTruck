@@ -6,6 +6,7 @@
 
     .menu-section .menu-item-name {
         font-size: 1.1rem; /* Reduce menu item font size for mobile */
+        margin-bottom: 5px;
     }
 
     .menu-section .description {
@@ -14,7 +15,7 @@
 
     .sizes-prices .menu-item-name {
         font-size: 0.5rem; /* Reduce price box font size for mobile */
-        padding: 2px;
+        padding: 1px;
     }
 
     /* Ensure carousel images adjust to mobile screen */
@@ -32,7 +33,7 @@
 
     /* Padding adjustments for mobile */
     .menu-section {
-        padding: 8px; /* Further reduce padding for mobile */
+        padding: 2px; /* Further reduce padding for mobile */
     }
 
     footer {
@@ -134,7 +135,7 @@
     font-size: 1rem; /* Further reduce description font size */
     color: #ccc; /* Light font color for better readability */
     line-height: 0.90rem; /* Adjusted line spacing */
-    margin-bottom: 0.4rem; /* Reduced margin */
+    margin-bottom: 0.2rem; /* Reduced margin */
 }
 
 .sizes-prices .menu-item-name {
@@ -153,11 +154,12 @@
 
 .menu-section ul {
     padding-left: 0;
-    margin-bottom: 10px; /* Reduce bottom margin */
+    margin-bottom: 5px; /* Reduce bottom margin */
 }
 
 .menu-section li {
-    padding-bottom: 8px; /* Reduce padding between items */
+    padding-bottom: 2px; /* Reduce padding between items */
+    border-bottom: none; /* Remove the bottom border */
 }
 
 .menu-section {
@@ -247,11 +249,18 @@ footer {
 }
 
 
+
 #qrcode {
-    margin: 20px auto; /* Add margin to space out elements */
+    margin: 0 auto; /* Center horizontally */
     width: 200px; /* Adjust size as needed */
     height: 200px;
+    
+    padding: 10px; /* Optional: Add padding */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
 }
+
+
 
 
 /* Add a responsive rule to adjust video size for different screen sizes */
