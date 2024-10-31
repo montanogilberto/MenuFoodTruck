@@ -5,12 +5,12 @@
     }
 
     .menu-section .menu-item-name {
-        font-size: 1.1rem; /* Reduce menu item font size for mobile */
+        font-size: 1rem; /* Reduce menu item font size for mobile */
         margin-bottom: 5px;
     }
 
     .menu-section .description {
-        font-size: 1rem; /* Reduce description font size for mobile */
+        font-size: 0.9rem; /* Reduce description font size for mobile */
     }
 
     .sizes-prices .menu-item-name {
@@ -64,7 +64,6 @@
         padding: 10px 20px; /* Adjust padding */
     }
 
-
     .header .btn {
         background-color: transparent; /* Transparent background */
         border: none; /* No border */
@@ -84,29 +83,27 @@
 /* Media queries for extra-large screens */
 @media (min-width: 1920px) {
     h1 {
-        font-size: 1.5rem; /* Slightly decrease font size for headers */
+        font-size: 2rem; /* Increase font size for readability on large screens */
     }
 
-    .menu-section {
-        font-size: 1.4rem; /* Reduce font size for menu sections */
+    .menu-section .menu-item-name {
+        font-size: 1.5rem; /* Increase font size for item names */
     }
 
-    .carousel-item img {
-        height: 500px; /* Slightly reduce image height for large screens */
+    .menu-section .description {
+        font-size: 1.3rem; /* Increase description font size */
+    }
+
+    .sizes-prices .menu-item-name {
+        font-size: 1.3rem; /* Increase price box font size */
     }
 
     footer {
-        font-size: 1.1rem; /* Slightly reduce footer text size */
-    }
-
-    /* Adjust carousel controls size */
-    .carousel-control-prev-icon, .carousel-control-next-icon {
-        width: 2.5rem;
-        height: 2.5rem;
+        font-size: 1.2rem; /* Increase footer text size */
     }
 
     body {
-        font-size: 0.8rem; /* Slightly reduce base font size */
+        font-size: 1rem; /* Adjust base font size */
     }
 
     .container-fluid {
@@ -125,16 +122,16 @@
 /* Font settings for menu sections */
 .menu-section .menu-item-name {
     font-weight: bold;
-    font-size: 1.2rem; /* Further reduce font size for menu item names */
+    font-size: 1.2rem; /* Standard font size for menu item names */
     color: #ffc107; /* Bootstrap's warning color */
     display: block;
     margin-bottom: 0.4rem;
 }
 
 .menu-section .description {
-    font-size: 1rem; /* Further reduce description font size */
+    font-size: 1rem; /* Standard description font size */
     color: #ccc; /* Light font color for better readability */
-    line-height: 0.90rem; /* Adjusted line spacing */
+    line-height: 1.2rem; /* Adjusted line spacing */
     margin-bottom: 0.2rem; /* Reduced margin */
 }
 
@@ -147,7 +144,7 @@
     border: 1px solid #ffc107; /* Yellow border */
     border-radius: 8px; /* Slightly less rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Lighter shadow */
-    margin-bottom: 6px; /* Less space between the boxes */
+    margin-bottom: 4px; /* Less space between the boxes */
     display: block;
     text-align: center; /* Center the text in the box */
 }
@@ -194,7 +191,7 @@
 
 /* Footer styling */
 footer {
-    font-size: 0.8rem; /* Slightly larger footer text */
+    font-size: 0.9rem; /* Slightly larger footer text */
     background-color: #000; /* Dark background for the footer */
     color: #ffc107; /* Accent color for footer text */
     border-top: 2px solid #20c25e80; /* Accent border */
@@ -217,9 +214,8 @@ footer {
     color: #ffffff;
     padding: 8px; /* Less padding */
     text-align: center;
-    font-size: 0.9em; /* Smaller font size for contact info */
+    font-size: 1rem; /* Adjusted font size */
 }
-
 
 #fullscreenButton,
 #exitFullscreenButton {
@@ -248,20 +244,14 @@ footer {
     display: block; /* Ensure it's treated as a block element */
 }
 
-
-
 #qrcode {
     margin: 0 auto; /* Center horizontally */
     width: 200px; /* Adjust size as needed */
     height: 200px;
-    
     padding: 10px; /* Optional: Add padding */
     border-radius: 8px; /* Optional: Add rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
 }
-
-
-
 
 /* Add a responsive rule to adjust video size for different screen sizes */
 @media (max-width: 768px) {
