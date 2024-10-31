@@ -50,8 +50,26 @@
 
     /* Reduce header height and spacing on mobile */
     .header {
-        height: 20px; /* Reduce header height */
-        padding: 4px 0; /* Less padding for the header */
+        background-color: #ffc107; /* Header background color */
+        color: #333; /* Header text color */
+        text-align: center; /* Center the text */
+        font-size: 1.5rem; /* Adjust font size */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for depth */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+        border-top: 2px solid #20c25e80; /* Top border */
+        display: flex;
+        justify-content: space-between; /* Space out the content */
+        align-items: center; /* Center vertically */
+        padding: 10px 20px; /* Adjust padding */
+    }
+
+
+    .header .btn {
+        background-color: transparent; /* Transparent background */
+        border: none; /* No border */
+        font-size: 1.5rem; /* Adjust size */
+        color: #333; /* Icon color */
+        margin-left: 10px; /* Add space between icons */
     }
 
     /* Ensure the QR code is centered and adapts well to small screens */
@@ -197,4 +215,25 @@ footer {
     padding: 8px; /* Less padding */
     text-align: center;
     font-size: 0.9em; /* Smaller font size for contact info */
+}
+
+
+#fullscreenButton,
+#exitFullscreenButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+#exitFullscreenIcon {
+    color: #d9534f; /* Red color for close icon */
+}
+
+#exitFullscreenButton {
+    background-color: #d9534f; /* Red color for the close button */
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px 10px;
 }

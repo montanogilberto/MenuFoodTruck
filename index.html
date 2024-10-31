@@ -13,8 +13,14 @@
 <body>
     <div class="container-fluid text-light bg-dark min-vh-100 d-flex flex-column">
         <!-- Header -->
-        <header class="header text-center py-4">
-            <h1>Bienvenidos El Buchon Menu</h1>
+        <header class="header d-flex justify-content-between align-items-center py-2 px-3">
+            <div class="flex-grow-1 text-center">
+                <h1 class="m-0">Bienvenidos El Buchon Menu</h1>
+            </div>
+            <div>
+                <i id="fullscreenIcon" class="fas fa-expand btn" onclick="toggleFullScreen()" style="cursor: pointer;"></i>
+                <i id="exitFullscreenIcon" class="fas fa-times btn" onclick="exitFullScreen()" style="display: none; cursor: pointer;"></i>
+            </div>
         </header>
         <br/>
         <div class="row flex-grow-1">

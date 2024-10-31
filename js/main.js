@@ -49,3 +49,29 @@ let qrcode = new QRCode(document.getElementById("qrcode"), {
     colorLight: "#ffffff", // Light color (background)
     correctLevel: QRCode.CorrectLevel.H // Error correction level
 });
+
+
+function toggleFullScreen() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => {
+            console.error(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+        document.getElementById('fullscreenIcon').style.display = 'none';
+        document.getElementById('exitFullscreenIcon').style.display = 'inline-block';
+    }
+}
+
+function exitFullScreen() {
+    if (document.fullscreenElement) {
+        document.exitFullscreen();
+        document.getElementById('fullscreenIcon').style.display = 'inline-block';
+        document.getElementById('exitFullscreenIcon').style.display = 'none';
+    }
+}
+
+document.addEventListener('fullscreenchange', () => {
+    if (!document.fullscreenElement) {
+        document.getElementById('fullscreenIcon').style.display = 'inline-block';
+        document.getElementById('exitFullscreenIcon').style.display = 'none';
+    }
+});
