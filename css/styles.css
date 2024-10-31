@@ -247,6 +247,13 @@ footer {
 }
 
 
+#qrcode {
+    margin: 20px auto; /* Add margin to space out elements */
+    width: 200px; /* Adjust size as needed */
+    height: 200px;
+}
+
+
 /* Add a responsive rule to adjust video size for different screen sizes */
 @media (max-width: 768px) {
     .carousel-item video {

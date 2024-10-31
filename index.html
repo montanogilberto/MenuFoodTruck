@@ -35,6 +35,7 @@
                             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li> <!-- New QR code indicator -->
                         </ol>
                         <div class="carousel-inner h-100">
                             <div class="carousel-item active">
@@ -60,9 +61,13 @@
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
-                            
-                            
-                            
+                            <div class="carousel-item">
+                                <div class="d-flex flex-column justify-content-center align-items-center h-100">
+                                    <h2 class="text-warning mb-3">Scan Codigo QR </h2>
+                                    <p class="text-light mb-3">Accede a nuestro menú completo escaneando el código a continuación:</p>
+                                    <div id="qrcode"></div>
+                                </div>
+                            </div>
                             
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

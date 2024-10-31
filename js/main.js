@@ -45,16 +45,17 @@ $('#menuCarousel2').on('slide.bs.carousel', function (event) {
 // Set the initial interval for the first slide
 setSlideInterval();
 
-// Generate QR code for the menu URL
-const qrCodeUrl = "https://icy-hill-0ec54941e.5.azurestaticapps.net/"; // Your menu URL
+document.addEventListener('DOMContentLoaded', function () {
+    const qrCodeUrl = "https://icy-hill-0ec54941e.5.azurestaticapps.net/"; // Your menu URL
 
-let qrcode = new QRCode(document.getElementById("qrcode"), {
-    text: qrCodeUrl,    // URL to be embedded in the QR code
-    width: 200,         // Width of the QR code
-    height: 200,        // Height of the QR code
-    colorDark: "#000000", // Dark color for the QR code
-    colorLight: "#ffffff", // Light color (background)
-    correctLevel: QRCode.CorrectLevel.H // Error correction level
+    let qrcode = new QRCode(document.getElementById("qrcode"), {
+        text: qrCodeUrl,    // URL to be embedded in the QR code
+        width: 200,         // Width of the QR code
+        height: 200,        // Height of the QR code
+        colorDark: "#000000", // Dark color for the QR code
+        colorLight: "#ffffff", // Light color (background)
+        correctLevel: QRCode.CorrectLevel.H // Error correction level
+    });
 });
 
 function toggleFullScreen() {
